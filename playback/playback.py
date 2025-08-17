@@ -7,7 +7,7 @@ phrase = input("Write a phrase: " )
 words = []
 words.append(phrase.split(" "))
 
-print(words)
+print('...'. join(words))
 
 ##Join
 
