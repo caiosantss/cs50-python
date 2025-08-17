@@ -1,5 +1,5 @@
 def get_guess():
-    guess = 10
+    guess = input("Enter a guess: ")
     return guess
 
 
