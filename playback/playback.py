@@ -4,11 +4,13 @@ phrase = input("Write a phrase: " )
 
 ##Split e colcoar em uma lista
 
-lista = list()
-lista.append(phrase.split(" "))
+words = []
+
+for word in
+    words.append(words)
 
 
-print(("...", join(lista)))
+print("...". join(words))
 
 ##Join
 
