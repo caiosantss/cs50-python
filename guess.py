@@ -3,3 +3,5 @@ def get_guess():
     return guess
 
 
+def main():
+    gess = get_guess()
