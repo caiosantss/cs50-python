@@ -5,10 +5,7 @@ phrase = input("Write a phrase: " )
 ##Split e colcoar em uma lista
 
 words = []
-
-for word in
-    words.append(words)
-
+words.append(phrase.split(" "))
 
 print("...". join(words))
 
