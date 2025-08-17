@@ -1,10 +1,10 @@
 def get_guess():
-    guess = input("Enter a guess: ")
+    guess = int(input("Enter a guess: "))
     return guess
 
 
 def main():
-    gess = get_guess()
+    guess = get_guess()
     if guess == 50:
         print("Correct")
     else:
