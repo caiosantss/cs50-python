@@ -1,11 +1,7 @@
 ## Input do usuario
-
-phrase = input("Write a phrase: " )
-
-##Split e colcoar em uma lista
-
-print(phrase.replace(" ", "..."))
-
-##Join
-
+def main():
+    phrase = input("Write a phrase: " )
+    print(phrase.replace(" ", "..."))
+    
+main()
 
