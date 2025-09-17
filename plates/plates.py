@@ -42,10 +42,11 @@ def is_first_number_zero(palavra):
     contador = 0
     for numero in palavra:
         if numero.isdecimal() and contador == 0:
-            if numero is 0
-                return False
-            else:
+            if numero == '0':
+                contador += 1
                 return True
-        break
+            else:
+                contador += 1
+                return False
 
 
