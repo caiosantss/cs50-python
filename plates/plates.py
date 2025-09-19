@@ -37,9 +37,9 @@ def max_min_charaters(palavra):
 
 
 ## 3 Numbers cannot be used in the middle of a plate
-def is_number_end(plate):
+def is_number_end(palavra):
     find_number = False
-    for i in plate:
+    for i in palavra:
         if i.isdigit():
             find_number = True
         elif find_number and i.isalpha():
