@@ -1,9 +1,16 @@
 def main():
-    plate = input("Plate: ")
-    if is_valid(plate):
-        print("Valid")
-    else:
-        print("Invalid")
+    # plate = input("Plate: ")
+    # if is_valid(plate):
+    #     print("Valid")
+    # else:
+    #     print("Invalid")
+
+
+    txt = input("txt: " )
+
+    x = txt.isalnum()
+
+    print(x)
 
 
 def is_valid(plate):
