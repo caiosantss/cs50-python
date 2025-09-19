@@ -1,16 +1,9 @@
 def main():
-    # plate = input("Plate: ")
-    # if is_valid(plate):
-    #     print("Valid")
-    # else:
-    #     print("Invalid")
-
-
-    txt = input("txt: " )
-
-    x = txt.isalnum()
-
-    print(x)
+    plate = input("Plate: ")
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
 
 
 def is_valid(plate):
@@ -22,9 +15,9 @@ def is_valid(plate):
     if is_number_end(plate):
         print("is_number_end(plate)") ## ok
     if is_first_number_zero(plate):
-        print("is_number_end(plate)") ## ok
+        print("is_firtsnumber_zero") ## ok
     if is_alphanumerico(plate):
-        print("is_number_end(plate)")
+        print("is_alphanumerico")
 
 """
 OK - 1 - All vanity plates must start with at least two letters.
