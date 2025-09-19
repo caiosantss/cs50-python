@@ -57,10 +57,11 @@ def is_first_number_zero(palavra):
     for numero in palavra:
         if numero.isdecimal() and contador == 0:
             if numero == '0':
+                contador += 1
                 return True
             else:
                 return False
-        contador += 1
+
 
  ## 5 No periods, spaces, or punctuation marks are allowed:
 def is_alphanumerico(palavra):
