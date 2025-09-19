@@ -9,15 +9,15 @@ def main():
 def is_valid(plate):
 
     if start_two_letters(plate):
-        print("start_two_letters") ## ok
+        print("1 start_two_letters") ## ok
     if max_min_charaters(plate):
-        print("max_min_charaters(plate)") ## ok
+        print("2 max_min_charaters(plate)") ## ok
     if is_number_end(plate):
-        print("is_number_end(plate)") ## ok
+        print("3 is_number_end(plate)") ## ok
     if is_first_number_zero(plate):
-        print("is_firtsnumber_zero") ## ok
+        print("4 is_firtsnumber_zero") ## NOT OK
     if is_alphanumerico(plate):
-        print("is_alphanumerico")
+        print("5 is_alphanumerico") ## ok
 
 """
 OK - 1 - All vanity plates must start with at least two letters.
