@@ -57,7 +57,7 @@ def is_first_number_zero(palavra):
                 return False
             else:
                 return True
-        elif palavra.isaplha():
+        elif palavra.isalpha():
             return True
 
 
