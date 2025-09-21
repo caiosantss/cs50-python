@@ -18,10 +18,8 @@ while True:
 
 def convert_int(n):
     try:
+        if n.isnum() and n > 0
         return int(n)
     except ValueError:
         print("The value must be a number")
 
-
-
-##If, though, X or Y is not an integer, X is greater than Y, or Y is 0
