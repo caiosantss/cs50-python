@@ -7,13 +7,20 @@
 while True:
     try:
         tank = input("Fraction: ").split("/")
-        x = int(tank[0])
-        y = int(tank[1])
+        x = convert_int(x)
+        y = convert_int(y)
+        return x / y
     except ValueError:
         break
     except ZeroDivisionError:
         break
-    
+
+
+def convert_int(n):
+    try:
+        return int(n)
+    except ValueError:
+        print("The value must be a number")
 
 
 
