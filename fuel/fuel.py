@@ -18,6 +18,7 @@ while True:
 
 def convert_int(n):
     try:
+        if n > 0 and 
         return int(n)
     except ValueError:
         print("The value must be a number")
