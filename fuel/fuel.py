@@ -26,6 +26,13 @@ def convert_int(n):
 def show_percentage(n1, n2):
     return int((n1 / n2) * 100)
 
+def e_or_f(percentage):
+    if percentage <= 1:
+        return "E"
+    elif percentage >= 99:
+        return "F"
+
+
 
 main()
 
