@@ -11,8 +11,8 @@ def tank():
             tank = input("Fraction: ").split("/")
             x = convert_int(tank[0])
             y = convert_int(tank[1])
-            if x < y:
-                return show_percentage(x, y)
+            if x < y and y != 0:
+                return f"{show_percentage(x, y)}%"
         except ValueError:
             pass
         except ZeroDivisionError:
@@ -21,10 +21,7 @@ def tank():
 
 def convert_int(n):
     try:
-        if n.isdecimal():
-            n = int(n)
-            if n > 0:
-                return n
+        return int(n)
     except ValueError:
         print("The value must be a number")
 
