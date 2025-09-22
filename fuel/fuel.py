@@ -26,15 +26,16 @@ def convert_int(n):
 def show_percentage(n1, n2):
     try:
         porcentagem = round((n1 / n2) * 100)
+        if porcentagem <= 1:
+            return "E"
+        elif porcentagem >= 99:
+            return "F"
+        else:
+            return f"{porcentagem}%"
     except ZeroDivisionError:
         pass
-    
-    if porcentagem <= 1:
-        return "E"
-    elif porcentagem >= 99:
-        return "F"
-    else:
-        return f"{porcentagem}%"
+
+
 
 
 
