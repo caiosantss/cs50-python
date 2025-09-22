@@ -20,8 +20,10 @@ def tank():
 
 def convert_int(n):
     try:
-        if n.isnum() and n > 0:
-            return int(n)
+        if n.isdecimal():
+            n = int(n)
+            if n > 0:
+                return n
     except ValueError:
         print("The value must be a number")
 
