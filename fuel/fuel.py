@@ -1,13 +1,13 @@
 def main():
 
 tank = input("Fraction: ").split("/")
-show_tank = tank()
-print(show_tank)
+l = show_tank(tank)
+print(l)
 
 
 
 
-def tank(fraction):
+def show_tank(fraction):
         try:
             x = convert_int(fraction[0])
             y = convert_int(fraction[1])
