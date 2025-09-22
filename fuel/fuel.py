@@ -11,7 +11,7 @@ def tank():
             tank = input("Fraction: ").split("/")
             x = convert_int(tank[0])
             y = convert_int(tank[1])
-            if x <= y and y != 0 and x >= 0:
+            if x <= y and x >= 0:
                 return show_percentage(x, y)
         except ValueError:
             pass
