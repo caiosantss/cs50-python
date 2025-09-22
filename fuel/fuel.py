@@ -7,11 +7,10 @@ print(show_tank)
 
 
 
-def tank():
-    while True:
+def tank(fraction):
         try:
-            x = convert_int(tank[0])
-            y = convert_int(tank[1])
+            x = convert_int(fraction[0])
+            y = convert_int(fraction[1])
             return show_percentage(x, y)
         except ValueError:
             pass
