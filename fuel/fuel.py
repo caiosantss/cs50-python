@@ -11,8 +11,8 @@ def tank():
             tank = input("Fraction: ").split("/")
             x = convert_int(tank[0])
             y = convert_int(tank[1])
-            if x =< y and y != 0 and x > 0:
-                return f"{show_percentage(x, y)}%"
+            if x <= y and y != 0 and x >= 0:
+                return show_percentage(x, y)
         except ValueError:
             pass
         except ZeroDivisionError:
@@ -30,7 +30,7 @@ def show_percentage(n1, n2):
     elif porcentagem >= 99:
         return "F"
     else:
-        return porcentagem
+        return f"{porcentagem}%"
 
 
 
