@@ -8,14 +8,16 @@ def main():
 def tank():
     while True:
         try:
-            tank = input("Fraction: ").split("/")
-            x = convert_int(tank[0])
-            y = convert_int(tank[1])
+            fraction = input("Fraction: ")
+            parts = fraction.split("/")
+            if len(parts) != 2:
+                continue
+
+            x = convert_int(parts[0])
+            y = convert_int(parts[1])
             if x <= y and x >= 0:
                 return show_percentage(x, y)
-        except ValueError:
-            pass
-        except ZeroDivisionError:
+        except (ValueError, ZeroDivisionError):
             pass
 
 
