@@ -1,8 +1,9 @@
 def main():
 
-tank = input("Fraction: ").split("/")
-l = show_tank(tank)
-print(l)
+while True:
+    tank = input("Fraction: ").split("/")
+    l = show_tank(tank)
+    print(l)
 
 
 
