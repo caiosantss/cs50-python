@@ -6,9 +6,8 @@ def tank():
     while True:
         try:
             fraction = input("Fraction: ")
-            x = int(parts[0])
-            y = int(parts[1])
-            if x <= y and x >= 0:
+
+
                 return show_percentage(x, y)
         except (ValueError, ZeroDivisionError):
             pass
@@ -17,6 +16,10 @@ def tank():
 def valid_fraction(fraction):
     parts = fraction.split("/")
         if len(parts) != 2:
+            x = int(parts[0])
+            y = int(parts[1])
+                if x <= y and x >= 0:
+                    
 
 
 
