@@ -1,4 +1,8 @@
-## input x/y
+def main():
+
+tank = input("Fraction: ").split("/")
+show_tank = tank()
+print(show_tank)
 
 
 
@@ -6,14 +10,14 @@
 def tank():
     while True:
         try:
-            tank = input("Fraction: ").split("/")
-            x = convert_int(x)
-            y = convert_int(y)
-            return 
+            x = convert_int(tank[0])
+            y = convert_int(tank[1])
+            return show_percentage(x, y)
         except ValueError:
-            print("The value must be a number")
+            pass
         except ZeroDivisionError:
-            print("The value must be bigger than 0")
+            pass
+
 
 def convert_int(n):
     try:
@@ -21,4 +25,11 @@ def convert_int(n):
         return int(n)
     except ValueError:
         print("The value must be a number")
+
+
+def show_percentage(n1, n2):
+    return porcentage = int((n1 / n2) * 100)
+
+main()
+
 
