@@ -26,9 +26,9 @@ def convert_int(n):
         print("The value must be a number")
 
 
-def show_p
-ercentage(n1, n2):
+def show_percentage(n1, n2):
     return int((n1 / n2) * 100)
+
 
 main()
 
