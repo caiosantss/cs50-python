@@ -2,9 +2,6 @@ def main():
     show_tank = tank()
     print(show_tank)
 
-
-
-
 def tank():
     while True:
         try:
@@ -36,9 +33,6 @@ def show_percentage(n1, n2):
             return f"{porcentagem}%"
     except ZeroDivisionError:
         pass
-
-
-
 
 
 main()
