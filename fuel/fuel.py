@@ -20,10 +20,7 @@ def tank():
 
 
 def convert_int(n):
-    try:
-        return int(n)
-    except ValueError:
-        print("The value must be a number")
+    return int(n)
 
 
 def show_percentage(n1, n2):
