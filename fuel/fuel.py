@@ -6,20 +6,18 @@ def tank():
     while True:
         try:
             fraction = input("Fraction: ")
-            parts = fraction.split("/")
-            if len(parts) != 2:
-                continue
-
-            x = convert_int(parts[0])
-            y = convert_int(parts[1])
+            x = int(parts[0])
+            y = int(parts[1])
             if x <= y and x >= 0:
                 return show_percentage(x, y)
         except (ValueError, ZeroDivisionError):
             pass
 
 
-def convert_int(n):
-    return int(n)
+def valid_fraction(fraction):
+    parts = fraction.split("/")
+        if len(parts) != 2:
+
 
 
 def show_percentage(n1, n2):
