@@ -20,12 +20,20 @@ def main():
             else:
                 if "," not in date:
                     continue
-                month_str, day, year = date.replace(",", "").split()
+
+                ## remove virgula e reparte
+                parts = date.replace(",", "").split()
+
+                if len(parts) != 3:
+                    continue
+
                 ## atribui a variavel month
-                month = validate_month(month_str)
+                month_str = parts[0]
+                day = parts[1]
+                year = parts[2]
 
             ## fora do if, valida os valores
-            month = validate_month(month)
+            month = validate_month(month_str)
             day = validate_day(day)
             year = validate_year(year)
 
