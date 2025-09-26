@@ -16,7 +16,9 @@ def main():
 
                 month, day, year = parts
 
-                if not 
+                ##proteção
+                if not month.isdecimal():
+                    continue
 
             ## se o input for Month Day, Year
             else:
@@ -33,6 +35,10 @@ def main():
                 month = parts[0]
                 day = parts[1]
                 year = parts[2]
+
+                ##proteção
+                if not month.isalpha():
+                    continue
 
             ## fora do if, valida os valores
             month = validate_month(month)
