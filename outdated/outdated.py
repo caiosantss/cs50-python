@@ -16,6 +16,8 @@ def main():
 
                 month, day, year = parts
 
+                if not 
+
             ## se o input for Month Day, Year
             else:
                 if "," not in date:
