@@ -35,7 +35,7 @@ def main():
                 continue
 
             ## output: the same date as YYYY-MM-DD
-            print(f"{year:02}-{month:02}-{day:02}")
+            print(f"{year:04}-{month:02}-{day:02}")
             break
 
         except ValueError:
