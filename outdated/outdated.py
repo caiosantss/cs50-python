@@ -11,6 +11,11 @@ def main():
             if "/" in date:
                 parts = date.split("/")
 
+                if len(parts) != 3:
+                    continue
+
+                month, day, year = parts
+
             ## se o input for Month Day, Year
             else:
                 month_str, day, year = date.replace(",", "").split()
