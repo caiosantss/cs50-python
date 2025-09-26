@@ -28,12 +28,12 @@ def main():
                     continue
 
                 ## atribui a variavel month
-                month_str = parts[0]
+                month = parts[0]
                 day = parts[1]
                 year = parts[2]
 
             ## fora do if, valida os valores
-            month = validate_month(month_str)
+            month = validate_month(month)
             day = validate_day(day)
             year = validate_year(year)
 
