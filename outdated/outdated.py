@@ -18,7 +18,12 @@ def main():
 
             ## se o input for Month Day, Year
             else:
-                month_str, day, year = date.replace(",", "").split()
+                if "," not in date:
+                    continue
+                month_day, year = date.split(",")
+                year = validate_year(year.strip())
+                month_parts = month_day.strip().split()
+
                 ## atribui a variavel month
                 month = validate_month(month_str)
 
