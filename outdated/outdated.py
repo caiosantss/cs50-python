@@ -3,11 +3,13 @@ months = ["January","February","March","April","May","June","July","August","Sep
 
 def main():
     while True:
+
+        date = input("Date: ").strip()
+
         try:
             ## se input for month/day/year
-            date = input("Date: ").strip()
             if "/" in date:
-                month, day, year = date.split("/")
+                parts = date.split("/")
 
             ## se o input for Month Day, Year
             else:
