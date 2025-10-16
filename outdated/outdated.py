@@ -37,7 +37,8 @@ def main():
                 year = parts[2]
 
                 ##proteção
-                if not month.isalpha():
+                i
+                f not month.isalpha():
                     continue
 
             ## fora do if, valida os valores
