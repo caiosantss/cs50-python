@@ -1,4 +1,4 @@
 from PIL import Image
 
-with Image.open("before1.jpg") as image:
-    image.rotate(90).show()
+with Image.open("shirt.png") as image:
+    print(image.format, image.size, image.mode)
