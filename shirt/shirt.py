@@ -1,6 +1,4 @@
 from PIL import Image
 
-opening = Image.open("before1.jpg")
-size = ()
-size = Image.format(opening)
-print(size)
+with Image.open("before1.jpg") as image:
+    image.rotate(90).show()
