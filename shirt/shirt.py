@@ -1,3 +1,5 @@
 from PIL import Image
 
-Image.open("shirt.png")
+opening = Image.open("shirt.png")
+size = opening.size("shirt.png")
+print(size)
