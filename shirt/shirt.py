@@ -1,3 +1,3 @@
-from PIP import Image
+from PIL import Image
 
 Image.open("shirt.png")
