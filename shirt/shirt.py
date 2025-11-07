@@ -14,7 +14,7 @@ import sys
 def main():
 
     is_argv_valid()
-
+    #SHIRT
     try:
         with Image.open(str(sys.argv[1])) as ImgBefore, Image.open(
             "shirt.png"
