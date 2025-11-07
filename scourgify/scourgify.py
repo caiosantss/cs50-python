@@ -6,6 +6,7 @@ def main():
 
     check_argv()
 
+    # SCOURGIFY
     try:
         with open(str(sys.argv[1]), "r", newline="", encoding="utf-8") as oldFile, \
             open(str(sys.argv[2]), "w", newline="", encoding="utf-8") as newFile:
