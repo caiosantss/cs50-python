@@ -4,7 +4,7 @@ import pytest
 
 def test_init():
     jar = Jar()
-    asssert jat.capacity == 12
+    assert jar.capacity == 12
     assert jar.size == 0
 
     # negative capacity
