@@ -23,20 +23,9 @@ class Jar:
     #Getter capacity
     @property
     def capacity(self):
-        print("Getting capacity...")
         return self._capacity
 
     #Getter size
     @property
     def size(self):
-        print("Getting size...")
         return self._size
-
-
-Cookie_Jar = Jar()
-print(Cookie_Jar.capacity)
-Cookie_Jar.deposit(5)
-print(Cookie_Jar.size)
-Cookie_Jar.withdraw(2)
-print(Cookie_Jar.size)
-print(Cookie_Jar)

@@ -1,4 +1,5 @@
 from jar import Jar
+import pytest
 
 
 def test_init():
@@ -31,4 +32,5 @@ def test_deposit():
 
 
 def test_withdraw():
-    ...
+    jar = Jar()
+    jar.deposit()
