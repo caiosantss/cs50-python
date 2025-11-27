@@ -20,10 +20,14 @@ def test_deposit():
     assert jar.size == 5
     jar.deposit(7)
     assert jar.size == 12
-    try:
+
+    # n < 0
+    with pytest.raises(ValueError):
+        jar.deposit(-1)
+
+    # exceed capacity
+    with pytest.raises(ValueError):
         jar.deposit(1)
-    except ValueError as e:
-        
 
 
 def test_withdraw():
