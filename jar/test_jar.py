@@ -18,6 +18,12 @@ def test_deposit():
     jar = Jar()
     jar.deposit(5)
     assert jar.size == 5
+    jar.deposit(7)
+    assert jar.size == 12
+    try:
+        jar.deposit(1)
+    except ValueError as e:
+        
 
 
 def test_withdraw():
