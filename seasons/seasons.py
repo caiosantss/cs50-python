@@ -10,10 +10,12 @@ data_convertida = datetime.datetime.strptime(date_iso_format, "%Y-%m-%d")
 print(data_convertida)
 
 agora = datetime.datetime.now()
-print(agora)
+agora_hora_zerada = agora.replace(hour=0, minute=0, second=0, microsecond=0)
+# print(agora)
+print(agora_hora_zerada)
 
 #Diferença entre datas
-diferenca = data_convertida - agora
+diferenca = data_convertida - agora_hora_zerada
 print(diferenca)
 
 minutos = diferenca.total_seconds() / 60
