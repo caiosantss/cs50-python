@@ -16,7 +16,6 @@ pdf = PDF("p", "mm", "a4")
 
 pdf.add_page()
 
-
 # 1. Desenha a imagem centrada
 top_img_y = pdf.get_y()
 img_w = 190
@@ -27,7 +26,6 @@ pdf.image("shirtificate.png", x="C", w=img_w)
 bottom_img_y = pdf.get_y()
 img_h = bottom_img_y - top_img_y
 
-
 # 2. Texto a 40% da altura
 text = input("Name: ")
 
@@ -35,7 +33,6 @@ pdf.set_font("Helvetica", "", 24)
 pdf.set_text_color(255, 255, 255)
 
 text_y = top_img_y + img_h * 0.40
-
 
 # 3. Centralização dentro da imagem
 page_w = pdf.w - pdf.l_margin - pdf.r_margin
