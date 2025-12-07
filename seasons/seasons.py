@@ -1,22 +1,50 @@
 import datetime
+import inflect
+import sys
 
-date_iso_format = "2025-12-25"
+p = inflect.engine()
 
-#Converte para date object -- Somente a data
-print(datetime.date.fromisoformat(date_iso_format))
 
-#converte para datetime object - Data + Hora(00:00:00)
-data_convertida = datetime.datetime.strptime(date_iso_format, "%Y-%m-%d")
-print(data_convertida)
+def main():
 
-agora = datetime.datetime.now()
-agora_hora_zerada = agora.replace(hour=0, minute=0, second=0, microsecond=0)
-# print(agora)
-print(agora_hora_zerada)
+    agora_hora_zerada = get_date_now()
 
-#Diferença entre datas
-diferenca = data_convertida - agora_hora_zerada
-print(diferenca)
+    # Lê a data de entrada
+    date_input = input("Date of Birth: ")
 
-minutos = diferenca.total_seconds() / 60
-print(f"{minutos:.2f}")
+    # Converte a data de entrada
+    try:
+        data_convertida = convert_input_date(date_input)
+    except ValueError:
+        sys.exit("Invalid date")
+
+    # Calcula a diferença em minutos
+    minutos = diference_in_minutes(data_convertida, agora_hora_zerada)
+
+    # Converte o número de minutos para palavras
+    minutos_por_extenso = number_to_words(minutos)
+
+    # Exibe o resultado
+    print(f"{minutos_por_extenso} minutes")
+
+
+def convert_input_date(data):
+    # converte para datetime object - Data + Hora(00:00:00)
+    return datetime.datetime.strptime(data, "%Y-%m-%d").date()
+
+
+def diference_in_minutes(date, date_now):
+    # Calcula a diferença em minutos entre duas datas
+    return (date_now - date).total_seconds() / 60
+
+
+def number_to_words(number):
+    return p.number_to_words(int(number), andword=" ").capitalize()
+
+
+def get_date_now():
+    return datetime.date.today()
+
+
+if __name__ == "__main__":
+    main()
